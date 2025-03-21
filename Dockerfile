@@ -7,7 +7,7 @@ WORKDIR /app
 
 # Install additional dependencies
 RUN pip install --upgrade pip
-RUN pip install torch diffusers transformers accelerate safetensors runpod boto3 Pillow
+RUN pip install torch diffusers transformers accelerate safetensors runpod boto3 Pillow huggingface_hub
 
 # Copy your handler code into the container
 COPY handler.py /app/handler.py
